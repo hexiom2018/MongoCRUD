@@ -32,7 +32,7 @@ class Home extends React.Component {
                             <View style={styles.buttonRow1}>
                                 <TouchableOpacity style={styles.buttondiv1} onPress={this._onPressButton}>
                                     <Text style={styles.buttonTittle}>
-                                        Creat
+                                        Create
                               </Text>
                                 </TouchableOpacity>
                                 <TouchableOpacity style={styles.buttondiv2} onPress={this._onPressButton}>
