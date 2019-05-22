@@ -13,7 +13,11 @@ class Home extends React.Component {
         // title: 'Welcome',
         header: null
     };
-    _onPressButton = () => {
+    _Create = () => {
+        console.log("function run")
+        this.props.navigation.navigate('Create')
+    }
+    _Read = () => {
         console.log("function run")
         this.props.navigation.navigate('Create')
     }
@@ -31,24 +35,24 @@ class Home extends React.Component {
                         </View>
                         <View style={styles.div2}>
                             <View style={styles.buttonRow1}>
-                                <TouchableOpacity style={styles.buttondiv1} onPress={this._onPressButton}>
+                                <TouchableOpacity style={styles.buttondiv1} onPress={this._Create}>
                                     <Text style={styles.buttonTittle}>
                                         Create
                               </Text>
                                 </TouchableOpacity>
-                                <TouchableOpacity style={styles.buttondiv2} onPress={this._onPressButton}>
+                                <TouchableOpacity style={styles.buttondiv2} onPress={this._Read}>
                                     <Text style={styles.buttonTittle}>
                                         Read
                                          </Text>
                                 </TouchableOpacity>
                             </View>
                             <View style={styles.buttonRow2}>
-                                <TouchableOpacity style={styles.buttondiv3} onPress={this._onPressButton}>
+                                <TouchableOpacity style={styles.buttondiv3} onPress={this._Read}>
                                     <Text style={styles.buttonTittle}>
                                         Update
                               </Text>
                                 </TouchableOpacity>
-                                <TouchableOpacity style={styles.buttondiv4} onPress={this._onPressButton}>
+                                <TouchableOpacity style={styles.buttondiv4} onPress={this._Read}>
                                     <Text style={styles.buttonTittle}>
                                         Delete
                               </Text>
