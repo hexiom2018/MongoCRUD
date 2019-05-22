@@ -13,8 +13,9 @@ class Home extends React.Component {
         // title: 'Welcome',
         header: null
     };
-    _onPressButton = ()=>{
+    _onPressButton = () => {
         console.log("function run")
+        this.props.navigation.navigate('Create')
     }
     render() {
 
@@ -64,7 +65,6 @@ class Home extends React.Component {
 
 const styles = StyleSheet.create({
     main: {
-        backgroundColor: 'red',
         flex: 1
     },
     titleText: {
@@ -101,7 +101,11 @@ const styles = StyleSheet.create({
         width: '30%',
         height: '50%',
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        shadowOffset: { width: 100, height: 100, },
+        shadowColor: 'red',
+        // shadowOpacity: 1.0,
+        shadowRadius: 2
     },
     buttondiv2: {
         backgroundColor: 'white',
