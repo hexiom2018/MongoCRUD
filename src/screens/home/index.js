@@ -1,7 +1,6 @@
 import React from 'react';
 import { View, ScrollView, Image, Text, StyleSheet, TouchableOpacity, ImageBackground, StatusBar, Button } from 'react-native';
 import HomeBackground from '../../../assets/homesrc.jpg'
-
 class Home extends React.Component {
     constructor(props) {
         super(props);
@@ -19,7 +18,7 @@ class Home extends React.Component {
     }
     _Read = () => {
         console.log("function run")
-        this.props.navigation.navigate('Create')
+        this.props.navigation.navigate('Read')
     }
     render() {
 
