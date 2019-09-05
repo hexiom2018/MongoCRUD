@@ -63,7 +63,8 @@ class Create extends React.Component {
         const { name, color, Bid, image, Gearbox, Fuel } = this.state
         if (!name) {
             alert('Please add name')
-        } else if (!color && color.length < 3) {
+        }
+        else if (!color && color.length < 3) {
             alert('Describe color briefly ')
         }
         else if (!Bid) {
@@ -74,7 +75,8 @@ class Create extends React.Component {
         }
         else if (!Gearbox) {
             alert('Please Select Gearbox type')
-        } else if (!Fuel) {
+        }
+        else if (!Fuel) {
             alert('Please Select Fuel type')
         }
         else {
@@ -92,7 +94,7 @@ class Create extends React.Component {
         }
     }
     render() {
-        const { image, Bid, color,loading} = this.state
+        const { image, Bid, color, loading } = this.state
         // object's for dropdown
         let Category = [{ value: 'Automatic' }, { value: 'Manual' }];
         let fuel = [{ value: 'Diesel' }, { value: 'Petrol' }];
@@ -200,7 +202,7 @@ class Create extends React.Component {
                                 <Button
                                     onPress={() => this.submit()}
                                     title="Submit"
-                                    // color="#ffff"
+                                // color="#ffff"
                                 />
                             </View>
                             <View style={{ height: 20 }}></View>
